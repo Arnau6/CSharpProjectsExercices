@@ -1,0 +1,7 @@
+E:\OneDrive\Formation\4ème année\Projet\C#\Projects\Projects\nurl\My_NURL\obj\Debug\My_NURL.csprojResolveAssemblyReference.cache
+E:\OneDrive\Formation\4ème année\Projet\C#\Projects\Projects\nurl\My_NURL\bin\Debug\My_NURL.exe
+E:\OneDrive\Formation\4ème année\Projet\C#\Projects\Projects\nurl\My_NURL\bin\Debug\My_NURL.pdb
+E:\OneDrive\Formation\4ème année\Projet\C#\Projects\Projects\nurl\My_NURL\bin\Debug\nunit.framework.dll
+E:\OneDrive\Formation\4ème année\Projet\C#\Projects\Projects\nurl\My_NURL\bin\Debug\nunit.framework.xml
+E:\OneDrive\Formation\4ème année\Projet\C#\Projects\Projects\nurl\My_NURL\obj\Debug\My_NURL.exe
+E:\OneDrive\Formation\4ème année\Projet\C#\Projects\Projects\nurl\My_NURL\obj\Debug\My_NURL.pdb
