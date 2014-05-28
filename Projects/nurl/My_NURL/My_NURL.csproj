@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Parser\Nurl_command.cs" />
-    <Compile Include="Program" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\T010_Offline.cs" />
   </ItemGroup>

@@ -8,9 +8,8 @@
  */
 using System;
 using NUnit.Framework;
-using My_NURL.Parser;
 	
-namespace My_NURL.Tests
+namespace My_NURL
 {
 
 	[TestFixture]
@@ -22,6 +21,17 @@ namespace My_NURL.Tests
 			//given
 			var command = new Nurl_command( new string[] {"get","-url","http://fake"}); //votre implémentation
 			command.textFromAnURL = "<h1>hello</h1>"; //Offline
+
+			//then
+			Assert.AreEqual(true, command.isUrlToShow);
+		}
+		
+		[Test]
+		public void Content_of_a_page_correctly_show()
+		{
+			//given
+			var command = new Nurl_command( new string[] {"get","-url","http://fake"}); //votre implémentation
+			command.textFromAnURL = "<h1>hello</h1>"; //Offline
 			
 			//when
 			var result = command.textFromAnURL; //exemple d'implémentation
@@ -29,7 +39,22 @@ namespace My_NURL.Tests
 			//then
 			Assert.That(result, Is.EqualTo("<h1>hello</h1>"));
 		}
-		
+
+		[Test]
+		public void is_Argument_Correctly_parse()
+		{
+			//given
+			var command = new Nurl_command( new string[] {"get","-url","http://fake", "test", "-times", "5", "-avg"}); //votre implémentation
+			command.textFromAnURL = "<h1>hello</h1>"; //Offline
+
+			//then
+			Assert.AreEqual(true, command.isUrlToShow);
+			Assert.AreEqual(true, command.isConnectionToCheck);
+			Assert.AreEqual(true, command.isAvgOfCheck);
+			Assert.AreEqual(5, command.nbTimesToCheck);
+			Assert.AreEqual("http://fake", command.urlAddress);
+			//Assert.AreEqual(true, command.textFromAnURL);
+		}
 		
 	}
 }

@@ -12,14 +12,23 @@ namespace My_NURL
 {
 	class Program
 	{
-		public static void Main(string[] args)
+		public static int Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			if (args.Length < 3)
+			{
+				Console.WriteLine("Not enough arguments");
+				Console.Write("Press any key to continue . . . ");
+				Console.ReadKey(true);
+				return 1;
+			}
 			
-			// TODO: Implement Functionality Here
+			var command = new Nurl_command(args);
 			
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
+			
+			return 0;
 		}
+		
 	}
 }
