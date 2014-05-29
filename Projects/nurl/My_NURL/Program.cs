@@ -16,16 +16,16 @@ namespace My_NURL
 		{
 			if (args.Length < 3)
 			{
-				Console.WriteLine("Not enough arguments");
+				/*Console.WriteLine("Not enough arguments");
 				Console.Write("Press any key to continue . . . ");
-				Console.ReadKey(true);
+				Console.ReadKey(true);*/
 				return 1;
 			}
 			
 			var command = new Nurl_command(args);
 			
-			Console.Write("Press any key to continue . . . ");
-			Console.ReadKey(true);
+			/*Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);*/
 			
 			return 0;
 		}
